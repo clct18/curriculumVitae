@@ -198,15 +198,9 @@
     <script>
         // 下载PDF功能
         document.getElementById('downloadPdf').addEventListener('click', function() {
-            // pdf的下载路径还没调好
-             window.location.href = 'chenlang-resume.pdf';
+               //pdf文件的下载路径
+             window.location.href = 'https://curriculum-vitae-five-eta.vercel.app/assets/chenlang-resume.pdf';
             
-            // 没有现成PDF时，调用打印功能并提示用户保存为PDF（浏览器兼容）
-			//先用这个凑合一下
-            alert('请在打印预览中选择"保存为PDF"完成下载');
-            setTimeout(() => {
-                window.print();
-            }, 1000);
         });
     </script>
 </body>
